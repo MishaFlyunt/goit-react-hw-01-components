@@ -1,7 +1,7 @@
-export const StatisticsItems = ({ data }) => {
+export const StatisticsItems = ({ stats }) => {
   return (
     <ul>
-      {data.map(item => (
+      {stats.map(item => (
         <li key={item.id}>
           <span>{item.label}</span>
           <span>{item.percentage}</span>
