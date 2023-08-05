@@ -1,5 +1,5 @@
-import friends  from './friends';
-import { FriendListItem } from './FriendListItem';
+import friends from './friends.json';
+import { FriendListItem } from './FriendItem/FriendListItem';
 
 export const FriendList = () => {
   return (

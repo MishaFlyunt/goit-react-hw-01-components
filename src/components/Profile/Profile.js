@@ -1,5 +1,5 @@
 import { Description } from './Description/Description';
-import { Stats } from './Stats';
+import { Stats } from './Stats/Stats';
 import user from './user';
 
 export const Profile = () => {

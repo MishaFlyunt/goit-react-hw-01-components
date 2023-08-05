@@ -1,11 +1,12 @@
 import data from './data';
-import { StatisticsItems } from './StatisticsItems';
+import { StatisticsItems } from './StatisticsItem/StatisticsItems';
+import { StatisticsStyled, Title } from './Statistics.styled';
 
 export const Statistics = () => {
   return (
-    <section>
-      <h2>Upload stats</h2>
+    <StatisticsStyled>
+      <Title >Upload stats</Title>
       <StatisticsItems stats={data} />
-    </section>
+    </StatisticsStyled>
   );
 };

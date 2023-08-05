@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ProfileBlock = styled.div`
   border: 3px solid black;
-  border-radius: 15px;
   padding: 40px;
   margin-top: 30px;
 
