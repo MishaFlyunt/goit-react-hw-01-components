@@ -2,17 +2,17 @@ import { FriendList } from './Friends/FriendList';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { TransactionHistory } from './Transactions/TransactionHistory';
-import { GlobalStyle } from './GlobalStyle';
+import { GlobalStyle, Container } from './GlobalStyle';
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Profile />
       <Statistics />
       <FriendList />
       <TransactionHistory />
 
-      <GlobalStyle/>
-    </div>
+      <GlobalStyle />
+    </Container>
   );
 };
