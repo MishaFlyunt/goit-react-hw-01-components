@@ -11,4 +11,5 @@ export const StatisticsItemsStyled = styled.li`
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding: 10px;
 `;

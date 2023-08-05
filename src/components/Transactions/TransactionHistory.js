@@ -1,5 +1,6 @@
-import { TransactionItem } from './TransactionItem';
+import { TransactionItem } from './TransactionItem/TransactionItem';
 import transaction from './transactions';
+import { TransactionStyled } from './TransactionHistory.styled';
 
 export const TransactionHistory = () => {
   return (
@@ -7,9 +8,9 @@ export const TransactionHistory = () => {
       <table>
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
+            <TransactionStyled>Type</TransactionStyled>
+            <TransactionStyled>Amount</TransactionStyled>
+            <TransactionStyled>Currency</TransactionStyled>
           </tr>
         </thead>
         <TransactionItem transaction={transaction} />
