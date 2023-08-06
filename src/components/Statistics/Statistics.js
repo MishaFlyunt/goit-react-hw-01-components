@@ -1,12 +1,22 @@
-import data from './data';
-import { StatisticsItems } from './StatisticsItem/StatisticsItems';
-import { StatisticsStyled, Title } from './Statistics.styled';
+import {
+  StatisticsStyled,
+  Title,
+  StatisticsListStyled,
+  StatisticsItemsStyled,
+} from './Statistics.styled';
 
-export const Statistics = () => {
+export const Statistics = ({ data, title }) => {
   return (
     <StatisticsStyled>
-      <Title >Upload stats</Title>
-      <StatisticsItems stats={data} />
+      {title && <Title>{title}</Title>}
+      <StatisticsListStyled>
+        {data.map(item => (
+          <StatisticsItemsStyled key={item.id}>
+            <span>{item.label}</span>
+            <span>{item.percentage}%</span>
+          </StatisticsItemsStyled>
+        ))}
+      </StatisticsListStyled>
     </StatisticsStyled>
   );
 };
