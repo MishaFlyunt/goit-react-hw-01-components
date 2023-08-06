@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
+const getRandomColor = () =>
+  `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+
 export const StatisticsStyled = styled.div`
-  background-color: rgb(173, 109, 340);
+  border: 2px solid ${props => getRandomColor(props.index)};
+  margin: 15px 0;
 `;
 
 export const Title = styled.h2`
@@ -21,5 +27,5 @@ export const StatisticsItemsStyled = styled.li`
   align-items: center;
   gap: 8px;
   padding: 10px;
+  background-color: ${props => getRandomColor(props.index)};
 `;
-
